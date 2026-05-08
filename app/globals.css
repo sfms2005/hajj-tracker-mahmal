@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #7a1f3d;
+  --color-primary-soft: #9c2c52;
+  --color-secondary: #c9a263;
+  --color-secondary-soft: #dfc18a;
+  --color-bg: #f4ebde;
+  --color-bg-soft: #faf3ea;
+  --color-surface: #ffffff;
+  --color-track: #e8dccb;
+  --color-text: #2b2120;
+  --color-text-muted: #7a6a63;
+
+  --background: var(--color-bg);
+  --foreground: var(--color-text);
+
+  --shadow-card: 0 8px 20px rgba(0, 0, 0, 0.05);
+  --shadow-button: 0 10px 24px rgba(122, 31, 61, 0.18);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-tajawal), var(--font-geist-sans), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  font-size: 17px;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  background-image: linear-gradient(to bottom, var(--color-bg-soft), #ffffff);
+  background-attachment: fixed;
+  font-family: var(--font-tajawal), var(--font-geist-sans), "Noto Kufi Arabic",
+    Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/** يصغّر الواجهة بالكامل (نص، دوائر، صور) بحوالي 15% أي إلى 85% من الحجم. */
+.app-shell {
+  zoom: 0.85;
+}
+
+@layer components {
+  .qs-card {
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    box-shadow: var(--shadow-card);
+    padding: 18px;
+  }
+
+  .qs-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-image: linear-gradient(
+      135deg,
+      var(--color-primary),
+      var(--color-primary-soft)
+    );
+    box-shadow: var(--shadow-button);
+    transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+  }
+  .qs-btn-primary:hover {
+    filter: brightness(1.05);
+  }
+  .qs-btn-primary:active {
+    transform: scale(0.99);
+  }
+
+  .qs-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+  .qs-btn-secondary:hover {
+    background-color: rgba(201, 162, 99, 0.08);
+  }
+  .qs-btn-secondary:active {
+    transform: scale(0.99);
+  }
+
+  .qs-heading {
+    color: var(--color-primary);
+    font-weight: 800;
+  }
+
+  .qs-accent {
+    color: var(--color-secondary);
+  }
+}

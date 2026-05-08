@@ -1,0 +1,88 @@
+import Link from "next/link";
+import DuaCard from "../components/DuaCard";
+import ScrollToTopButton from "../components/ScrollToTopButton";
+import RandomDuaButton from "../components/RandomDuaButton";
+import Button from "../components/Button";
+import { duaCategories } from "@/data/duas";
+
+export const metadata = {
+  title: "أدعيتي - حملة قاصد",
+  description: "مجموعة من الأدعية المختارة لرحلة الحج والحياة اليومية",
+};
+
+export default function DuasPage() {
+  const totalDuas = duaCategories.reduce(
+    (sum, category) => sum + category.duas.length,
+    0,
+  );
+
+  return (
+    <main className="-mt-6 px-5 pb-10 pt-0">
+      <Link
+        href="/"
+        className="inline-flex items-center gap-2 rounded-xl px-2 py-2 text-sm font-bold text-[#7a1f3d] transition-colors hover:bg-[#7a1f3d]/5"
+      >
+        <ArrowRightIcon />
+        <span>الصفحة الرئيسية</span>
+      </Link>
+
+      <header className="mt-2 text-center">
+        <h1 className="inline-block border-b-2 border-[#c9a263] pb-1 text-3xl font-extrabold leading-tight text-[#7a1f3d] sm:text-4xl">
+          أدعيتي
+        </h1>
+        <p className="mt-2 text-sm font-semibold text-stone-600">
+          {totalDuas} دعاءً مختارًا في {duaCategories.length} أبواب
+        </p>
+      </header>
+
+      <div className="mt-5">
+        <RandomDuaButton categories={duaCategories} />
+      </div>
+
+      <div className="mt-6 flex flex-col gap-7">
+        {duaCategories.map((category) => (
+          <section key={category.id} className="flex flex-col gap-3">
+            <div className="flex items-center gap-3">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-[#c9a263]" />
+              <h2 className="text-[17px] font-extrabold text-[#7a1f3d]">
+                {category.title}
+              </h2>
+              <span className="h-px flex-1 bg-[#e8dccb]" />
+            </div>
+
+            <div className="flex flex-col gap-2.5">
+              {category.duas.map((dua, i) => (
+                <DuaCard key={i} text={dua} />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <Button href="/" variant="primary" icon={<ArrowRightIcon />} className="mt-10">
+        العودة للصفحة الرئيسية
+      </Button>
+
+      <ScrollToTopButton />
+    </main>
+  );
+}
+
+function ArrowRightIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+      aria-hidden="true"
+    >
+      <path d="M13 6l6 6-6 6" />
+      <path d="M19 12H5" />
+    </svg>
+  );
+}
