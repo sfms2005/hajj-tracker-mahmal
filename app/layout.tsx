@@ -20,14 +20,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "رحلة الحج - حملة قاصد",
+  title: "رحلة الحج - حملة المحمل",
   description:
-    "منصة رقمية لمتابعة رحلة الحجاج ضمن حملة قاصد خطوة بخطوة بسهولة وتنظيم",
+    "منصة رقمية لمتابعة رحلة الحجاج ضمن حملة المحمل خطوة بخطوة بسهولة وتنظيم",
   openGraph: {
-    title: "رحلة الحج - حملة قاصد",
-    description: "تابع رحلتك في الحج مع حملة قاصد بكل سهولة وطمأنينة",
+    title: "رحلة الحج - حملة المحمل",
+    description: "تابع رحلتك في الحج مع حملة المحمل بكل سهولة وطمأنينة",
     url: "https://hajj-tracker-qased.vercel.app",
-    siteName: "حملة قاصد",
+    siteName: "حملة المحمل",
     images: [
       {
         url: "/Almahmal.png",

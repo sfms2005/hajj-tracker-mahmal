@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <main className="pb-10">
-      <header className="-mt-6 px-5 pt-0 pb-2 text-center">
+      <header className="mt-4 px-5 pt-0 pb-2 text-center">
         <p className="text-sm font-semibold text-stone-600">أنت الآن في</p>
         <h1 className="mt-1 inline-block border-b-2 border-[#c9a263] pb-1 text-2xl font-extrabold leading-tight text-[#7a1f3d] sm:text-3xl">
           {currentDay.title}

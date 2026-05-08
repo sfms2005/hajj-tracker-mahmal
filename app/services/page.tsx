@@ -1,16 +1,16 @@
 import { getServicesRows } from "@/data/services";
 
 export const metadata = {
-  title: "خدماتنا - حملة قاصد المشاعر",
+  title: "خدماتنا - حملة المحمل",
   description:
-    "خدمات النقل والسكن والإشراف الميداني وخدمة الحاج على مدار الساعة وغيرها من خدمات قاصد المشاعر.",
+    "خدمات النقل والسكن والإشراف الميداني وخدمة الحاج على مدار الساعة وغيرها من خدمات حملة المحمل.",
 };
 
 export default function ServicesPage() {
   const [row1, row2] = getServicesRows();
 
   return (
-    <main className="relative isolate -mt-6 overflow-hidden px-5 pt-4 pb-12 sm:px-8">
+    <main className="relative isolate mt-4 overflow-hidden px-5 pt-4 pb-12 sm:px-8">
       <div
         className="pointer-events-none absolute left-1/2 top-[46%] z-0 -translate-x-1/2 -translate-y-1/2"
         aria-hidden="true"

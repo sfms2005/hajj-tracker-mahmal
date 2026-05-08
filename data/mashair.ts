@@ -8,19 +8,16 @@ export const mashairPlaces: MashairPlace[] = [
   {
     id: "mina",
     nameAr: "منى",
-    mapsUrl:
-      "https://maps.app.goo.gl/BjBW2FQRMBKTcQzg8?g_st=aw",
+    mapsUrl: "https://maps.app.goo.gl/9UBDWDS1Utb5Vkgv8",
   },
   {
     id: "arafat",
     nameAr: "عرفات",
-    mapsUrl:
-      "https://maps.app.goo.gl/BjBW2FQRMBKTcQzg8?g_st=aw",
+    mapsUrl: "https://maps.app.goo.gl/fc221kHjbgiuR9kQ6",
   },
   {
     id: "muzdalifah",
     nameAr: "مزدلفة",
-    mapsUrl:
-      "https://maps.app.goo.gl/6EK2tabgbLa9Nhfc6?g_st=iw",
+    mapsUrl: "https://maps.app.goo.gl/NEVrbSkWFBSyTHRC6",
   },
 ];

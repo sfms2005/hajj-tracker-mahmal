@@ -6,7 +6,7 @@ import Button from "../components/Button";
 import { duaCategories } from "@/data/duas";
 
 export const metadata = {
-  title: "أدعيتي - حملة قاصد",
+  title: "أدعيتي - حملة المحمل",
   description: "مجموعة من الأدعية المختارة لرحلة الحج والحياة اليومية",
 };
 
@@ -17,7 +17,7 @@ export default function DuasPage() {
   );
 
   return (
-    <main className="-mt-6 px-5 pb-10 pt-0">
+    <main className="mt-4 px-5 pb-10 pt-0">
       <Link
         href="/"
         className="inline-flex items-center gap-2 rounded-xl px-2 py-2 text-sm font-bold text-[#7a1f3d] transition-colors hover:bg-[#7a1f3d]/5"

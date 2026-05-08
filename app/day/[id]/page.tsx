@@ -23,7 +23,7 @@ export default async function DayPage({
 
   return (
     <main className="pb-10">
-      <header className="-mt-6 px-5 pt-0 pb-4 text-center">
+      <header className="mt-4 px-5 pt-0 pb-4 text-center">
         <p className="text-sm font-semibold text-stone-600">
           أنت الآن تشاهد
         </p>

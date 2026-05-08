@@ -1,19 +1,20 @@
 import Button from "../components/Button";
 
 export const metadata = {
-  title: "تواصلوا معنا - حملة قاصد المشاعر",
-  description: "الموقع الرسمي، الهاتف، البريد الإلكتروني، وحساب قاصد.",
+  title: "تواصلوا معنا - حملة المحمل",
+  description: "الموقع الرسمي، الهاتف، البريد الإلكتروني، وحساب حملة المحمل.",
 };
 
-const X_PROFILE = "https://x.com/qased0haj";
-const OFFICIAL_WEBSITE = "https://qasedhaj.com/";
-const PHONE_DISPLAY = "0500900384";
-const PHONE_TEL = "+966500900384";
-const EMAIL = "qased.haj@gmail.com";
+const X_PROFILE =
+  "https://x.com/almahmalhajj?s=21&t=uf4HD9_E8bWIGUg79UkjyA";
+const OFFICIAL_WEBSITE = "https://al-mahmal.com/";
+const PHONE_DISPLAY = "0558623623";
+const PHONE_TEL = "+966558623623";
+const EMAIL = "info@al-mahmal.com";
 
 export default function ContactPage() {
   return (
-    <main className="relative isolate -mt-6 overflow-hidden px-5 pt-4 pb-10 sm:px-8">
+    <main className="relative isolate mt-4 overflow-hidden px-5 pt-4 pb-10 sm:px-8">
       <div
         className="pointer-events-none absolute left-1/2 top-[42%] z-0 -translate-x-1/2 -translate-y-1/2"
         aria-hidden="true"
@@ -27,7 +28,7 @@ export default function ContactPage() {
         </h1>
 
         <p className="mt-10 text-[17px] font-medium leading-[2.05] text-[#2b2120] sm:text-[1.125rem] sm:leading-[2.1]">
-          للاستفسارات والتواصل المتعلق بخدمات حجاج الداخل وحملة قاصد المشاعر،
+          للاستفسارات والتواصل المتعلق بخدمات حجاج الداخل وحملة المحمل،
           اختر الوسيلة المناسبة أدناه.
         </p>
 
@@ -76,7 +77,7 @@ export default function ContactPage() {
             external
             icon={<XIcon />}
           >
-            حساب قاصد على
+            حساب حملة المحمل على
           </Button>
         </section>
       </div>

@@ -1,12 +1,12 @@
 export const metadata = {
-  title: "رؤيتنا - حملة قاصد المشاعر",
+  title: "رؤيتنا - شركة المحمل",
   description:
-    "رؤية قاصد المشاعر في خدمة حاج بيت الله الحرام بأعلى معايير الجودة والاحترافية.",
+    "أن نكون الخيار الأول في تقديم خدمات حج الداخل على مستوى المملكة العربية السعودية.",
 };
 
 export default function VisionPage() {
   return (
-    <main className="relative isolate -mt-6 overflow-hidden px-5 pt-4 pb-10 sm:px-8">
+    <main className="relative isolate mt-4 overflow-hidden px-5 pt-4 pb-10 sm:px-8">
       <div
         className="pointer-events-none absolute left-1/2 top-[42%] z-0 -translate-x-1/2 -translate-y-1/2"
         aria-hidden="true"
@@ -20,9 +20,10 @@ export default function VisionPage() {
         </h1>
 
         <p className="mt-10 text-[17px] font-medium leading-[2.05] text-[#2b2120] sm:text-[1.125rem] sm:leading-[2.1]">
-          أن نكون من الشركات الرائدة والمتميزة في خدمة حاج بيت الله الحرام، عبر
-          تقديم تجربة حاج آمنة وميسرة بروح إيمانية عالية، وفق أعلى معايير
-          الجودة والاحترافية، وبما يحقق تطلعات ضيوف الرحمن ورؤية المملكة 2030.
+          أن نكون الخيار الأول في تقديم خدمات حج الداخل على مستوى المملكة
+          العربية السعودية من خلال تقديم تجربة ضيافة وخدمات استثنائية ترتكز على
+          الجودة والراحة والاحترافية والروحانية والمساهمة في رفع مستوى الخدمات
+          بما ينسجم مع تطلعات رؤية المملكة 2030.
         </p>
       </div>
     </main>
